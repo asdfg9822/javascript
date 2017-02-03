@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div>
+    <div id="target" contenteditable="true" style="height:300px;width:600px;display:block;border: solid 1px #000;margin:10px 0;"></div>
+    <div id="targetText" contenteditable="true" style="height:300px;width:600px;display:block;border: solid 1px #000;margin:10px 0;"></div>
+</div>
+<div ></div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+<script>
+
+
+    //TODO Zeroclipboard를 활용하여 구현할 것
+/*    $(document).ready(function(){
+        //put yer code in here
+
+        ['paste'].forEach(function(event) {
+            document.addEventListener(event, function(e) {
+                e.preventDefault();
+                var pastedText = undefined;
+
+                if (window.clipboardData && window.clipboardData.getData) { // IE
+
+                    pastedText = window.clipboardData.getData('Text');
+
+                } else if (e.clipboardData && e.clipboardData.getData) {
+
+                    pastedText = e.clipboardData.getData('text/html');
+
+                }
+
+                $("#target").html(pastedText);
+                $("#targetText").text(pastedText);
+
+            });
+        });
+
+    });*/
+
+</script>
+</body>
+</html>
