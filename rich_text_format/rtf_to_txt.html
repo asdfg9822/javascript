@@ -12,12 +12,15 @@
 </div>
 <div ></div>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>-->
 
 <script>
 
-    $(document).ready(function(){
+    //굳이 jQuery를 사용할 필요가 없음
+    //    $(document).ready(function(){
         //put yer code in here
+
+
 
         ['paste'].forEach(function(event) {
             document.addEventListener(event, function(e) {
@@ -34,13 +37,16 @@
 
                 }
 
-                $("#target").html(pastedText);
-                $("#targetText").text(pastedText);
+                document.getElementById('target').innerHTML = pastedText;
+                document.getElementById('targetText').innerText = pastedText;
+
+                //$("#target").html(pastedText);
+                //$("#targetText").text(pastedText);
 
             });
         });
 
-    });
+//    });
 
 </script>
 </body>
