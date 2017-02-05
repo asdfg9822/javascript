@@ -25,3 +25,12 @@ https://www.lucidchart.com/techblog/2014/12/02/definitive-guide-copying-pasting-
 http://stackoverflow.com/questions/2176861/javascript-get-clipboard-data-on-paste-event-cross-browser
 
 ###META-DATA
+
+rtf_ms_excel.html
+rtf_google_excel.html
+
+어떤 형태이든 텍스트 이동은 제대로 되는 것을 확인하였음
+
+- Google SpreadSheet -> MS Excel RTF 복사 : Clipboard 복사 X / MS형식으로 다운받기 O
+- MS Excel -> Google SpreadSheet RTF 복사 : Clipboard 복사 O / MS형식으로 다운받기 O
+- Naver Cell은 양방향 모두 되지 않음

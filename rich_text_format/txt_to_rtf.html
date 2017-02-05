@@ -12,13 +12,13 @@
 </div>
 <div ></div>
 
-<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>-->
-
 <script>
 
-    //굳이 jQuery를 사용할 필요가 없음
-    //    $(document).ready(function(){
-        //put yer code in here
+/*
+
+//e.clipboardData.setData(format, text);
+//setData 안됨. 이유 찾아볼 것
+
 
         ['paste'].forEach(function(event) {
             document.addEventListener(event, function(e) {
@@ -38,14 +38,24 @@
                 document.getElementById('target').innerHTML = pastedText;
                 document.getElementById('targetText').innerText = pastedText;
 
-                //$("#target").html(pastedText);
-                //$("#targetText").text(pastedText);
+                e.clipboardData.setData('text/plain', "123");
+                console.log(e.clipboardData.getData('text/plain'));
 
+                var tmpDiv = document.createElement("div");
+                tmpDiv.innerHTML = pastedText;
+
+                var appendTd = document.querySelector('.xl63');
+                var parentTr = document.querySelector('tr');
+
+                parentTr.appendChild(appendTd);
+
+                console.log(tmpDiv.innerHTML);
+
+                e.clipboardData.setData('text/html', tmpDiv.innerHTML);
+                console.log(e.clipboardData.getData('text/html'));
             });
         });
-
-//    });
-
+*/
 </script>
 
 
