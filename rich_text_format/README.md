@@ -34,3 +34,17 @@ rtf_google_excel.html
 - Google SpreadSheet -> MS Excel RTF 복사 : Clipboard 복사 X / MS형식으로 다운받기 O
 - MS Excel -> Google SpreadSheet RTF 복사 : Clipboard 복사 O / MS형식으로 다운받기 O
 - Naver Cell은 양방향 모두 되지 않음
+
+###변환
+
+RTF를 이용하여 EXCEL EXPORT
+- 포맷을 동적으로 변경할 수 있어야 함
+- (동적으로 변경된 포맷 + 데이터의 조합)을 EXCEL로 EXPORT
+- RTF(Raw, HTML 포맷) -> Custom Lib -> Excel Lib -> Excel
+- Lib를 변경하더라도 사용가능 하도록 캡슐화
+
+###FILE을 읽을 수 있는 JAVA, NODE 택 1하기
+
+(Style 지정 가능해야 함)
+- JAVA EXCEL LIB : Apache POI, docx4j
+- NODE EXCEL LIB : node-excel-export, xlsx, node-xlsx, exceljs
