@@ -11,7 +11,6 @@ http://www.webdesignerdepot.com/2008/12/20-excellent-free-rich-text-editors/
 
 웹에서 RTF의 활용 가능 범위 확인을 위한 테스트 소스
 
-
 ###Chrome 확장 프로그램 테스트
 - Clipboard History 2 : 단순 텍스트를 계속해서 탐지
 
@@ -45,6 +44,10 @@ RTF를 이용하여 EXCEL EXPORT
 
 ###FILE을 읽을 수 있는 JAVA, NODE 택 1하기
 
-(Style 지정 가능해야 함)
+(필수 : Style 지정 가능해야 함, 많은 양의 EXCEL을 생성)
 - JAVA EXCEL LIB : Apache POI, docx4j
 - NODE EXCEL LIB : node-excel-export, xlsx, node-xlsx, exceljs
+
+###예상 추출 DATA
+- LIne Count 0~2000
+- File Count 0~100
