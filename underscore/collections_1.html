@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Collections Example 1</title>
+</head>
+<body>
+
+    <script src="../bower_components/underscore/underscore.js"></script>
+    <!-- each -->
+    <script>
+        var arr = ["1","2","3"];
+
+        _.each(arr, function(a,b,c) {
+            console.info("_.each");
+            console.log(a,b,c);
+        });
+
+        arr.forEach(function(a,b,c) {
+            console.info("native forEach ");
+            console.log(a,b,c);
+        });
+    </script>
+
+    <!---->
+    <script>
+
+    </script>
+</body>
+</html>
