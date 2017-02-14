@@ -7,24 +7,55 @@
 <body>
 
     <script src="../bower_components/underscore/underscore.js"></script>
-    <!-- each -->
-    <script>
-        var arr = ["1","2","3"];
 
-        _.each(arr, function(a,b,c) {
-            console.info("_.each");
-            console.log(a,b,c);
-        });
-
-        arr.forEach(function(a,b,c) {
-            console.info("native forEach ");
-            console.log(a,b,c);
-        });
-    </script>
 
     <!---->
     <script>
+        /* Underscore에서는 underscores.js에서 사용하는 대부분의 함부를 지역변수에 담는다. 스콥체인 탐색을 최소화 하기 위한 최적화 방식*/
 
+        // Save bytes in the minified (but not gzipped) version:
+        var ArrayProto = Array.prototype, ObjProto = Object.prototype, FuncProto = Function.prototype;
+
+        // Create quick reference variables for speed access to core prototypes.
+        var
+            push             = ArrayProto.push,
+            slice            = ArrayProto.slice,
+            toString         = ObjProto.toString,
+            hasOwnProperty   = ObjProto.hasOwnProperty;
+
+        // All **ECMAScript 5** native function implementations that we hope to use
+        // are declared here.
+        var
+            nativeIsArray      = Array.isArray,
+            nativeKeys         = Object.keys,
+            nativeBind         = FuncProto.bind,
+            nativeCreate       = Object.create;
+    </script>
+
+    <!-- each -->
+    <script>
+
+        /* optimizeCb Performance Test */
+        var bigArr = [];
+        for(var i=0; i < 10000; i++) {
+            bigArr.push(i);
+        }
+
+        console.time("forEach");
+
+        bigArr.forEach(function(a,b,c) {
+            if(b === 9999) {
+                console.timeEnd("forEach");
+            }
+        });
+
+        console.time("each")
+
+        _.each(bigArr, function(a,b,c) {
+            if(b === 9999) {
+                console.timeEnd("each");
+            }
+        });
     </script>
 </body>
 </html>
