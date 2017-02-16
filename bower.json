@@ -1,0 +1,22 @@
+{
+  "name": "javascript test",
+  "homepage": "https://github.com/asdfg9822/javascript",
+  "authors": [
+    "jonghyeok <asdfg9822@naver.com>"
+  ],
+  "description": "javascript test",
+  "main": "",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "underscore": "^1.8.3",
+    "zeroclipboard": "^2.3.0"
+  }
+}
