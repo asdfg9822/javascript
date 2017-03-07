@@ -17,6 +17,7 @@
   ],
   "dependencies": {
     "underscore": "^1.8.3",
-    "zeroclipboard": "^2.3.0"
+    "zeroclipboard": "^2.3.0",
+    "jasmine-core": "jasmine#^2.5.2"
   }
 }
