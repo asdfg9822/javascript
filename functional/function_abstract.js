@@ -10,6 +10,10 @@ var _ = require('underscore');
 var test1 = [2,3,-1,-6,0,-108,42,10].sort();
 console.log(test1);
 
+//다음과 같이 활용할 수 있다
+var test1_1 = ["안철수", "문제인", "박근혜", "박근령", "이명박", "김정식"];
+console.log(test1_1.sort());
+
 var test2 = [2,3,-1,-6,0,-108,42,10].sort(function(x, y) {
     if(x > y) {
         return -1;
