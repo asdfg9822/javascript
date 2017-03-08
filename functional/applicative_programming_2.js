@@ -42,5 +42,3 @@ var result = mapcat(function (e) {
 
 console.log(result.join('').slice(0,-1));
 
-
-
