@@ -7,17 +7,16 @@
 * A함수 내부의 함수 B를 호출하는 형식. 이때 함수 A의 결과를 B의 인자로 제공
 * */
 
-/*function A() {
-    something..
+function A() {
+    //something..
     return result;
 }
 
 function B(A) {
-    something..
-}*/
+    //something..
+}
 
 var _ = require('underscore');
-
 var nums = [1,2,3,4,5];
 
 function doubleAll(array) {

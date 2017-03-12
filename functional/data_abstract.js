@@ -18,7 +18,7 @@ function lameCSV(str) {
 
 var peopleTable = lameCSV("name, age, hair\nMerble, 35, red\n Bob, 64, blue");
 
-console.log("--result--\n", peopleTable);
+console.log("--peopleTable--\n", peopleTable);
 
 //Array.prototype.slice.call(target, 1);
 var result = _.rest(peopleTable);

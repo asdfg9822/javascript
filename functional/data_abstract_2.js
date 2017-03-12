@@ -4,7 +4,6 @@
 var _ = require('underscore');
 
 //existy : 값이 있는지
-
 //truthy : 꼭 사실은 아니지만 사실 같은
 
 function existy(x) {return x != null};
@@ -19,8 +18,6 @@ console.log(truthy(false));
 console.log(truthy(undefined));
 console.log(truthy(0));
 console.log(truthy(''));
-
-var condition = true, doSomething;
 
 /*if(condition) {
     return _.isFunction(doSomething) ? doSomething() : doSomething;

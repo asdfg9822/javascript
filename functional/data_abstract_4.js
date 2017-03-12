@@ -26,7 +26,7 @@ var browsers = [
 
 //SELECT title FROM library
 var result = _.pluck(browsers, 'name');
-// console.log(result);
+console.log(result);
 
 
 //cat은 함수를 인자로 받지 않으니 응용형이 아님
