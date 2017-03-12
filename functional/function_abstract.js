@@ -2,6 +2,45 @@
  * Created by user on 2017. 2. 14..
  */
 
+//함수의 형태(1)
+function add(x, y) {
+    return x + y;
+}
+
+//함수의 형태(2)
+function processNext() {
+    var message = InboxQueue.popMessage();
+
+    if(message != null) {
+        process(message);
+    }
+}
+
+function getCurrnentProgram(guide, channge, date) {
+    var schedule = guide.getSchedule(channel);
+
+    var current = schedule.programAt(date);
+
+    return current;
+}
+
+//자바스크립트에서의 불변성
+var greeting = new String('Hello World!!');
+
+greeting.replace('World', 'Gil-dong');
+greeting.valueOf();
+
+console.log(greeting);
+
+//새로운 값 대입
+var greeting = new String('Hello World!!');
+
+greeting = greeting.replace('World', 'Gil-dong');
+greeting.valueOf();
+
+console.log(greeting);
+
+
 var _ = require('underscore');
 
 // sort() 는 인자로 비교기를 넣지 않으면 String 비교를 한다
