@@ -19,14 +19,14 @@ safari      30              Apple
 */
 
 var browsers = [
-    {name: "ie",     userCount:"100",   maker: "Microsoft"},
-    {name: "chrome", userCount:"80",    maker: "Chrome"},
-    {name: "safari", userCount:"20",    maker: "Apple"}
+    {name: "ie",     userCount:100,   maker: "Microsoft"},
+    {name: "chrome", userCount:80,    maker: "Chrome"},
+    {name: "safari", userCount:20,    maker: "Apple"}
 ];
 
 //SELECT title FROM library
 var result = _.pluck(browsers, 'name');
-console.log(result);
+//console.log(result);
 
 
 //cat은 함수를 인자로 받지 않으니 응용형이 아님
@@ -64,10 +64,10 @@ function select(table, keys) {
 * */
 
 var result = select(browsers, ['name']);
-//console.log(result);
+console.log(result);
 
 var result = select(browsers, ['name', 'maker']);
-//console.log(result);
+console.log(result);
 
 var result = select(result, ['name']);
 //console.log(result);
@@ -113,7 +113,7 @@ var result = where(browsers, function (browser) {
     return browser.userCount > 50;
 });
 
-// console.log(result);
+ console.log(result);
 
 
 var result = where(select(as(browsers, {maker: 'brand'}), ['name', 'brand']), function (browser) {
