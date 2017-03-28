@@ -2,7 +2,7 @@
  * Created by user on 2017. 3. 29..
  */
 
-//https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce
+
 
 
 /*
@@ -23,7 +23,7 @@ function omit(targetObj, omitKeys) {
     var returnObj = {};
 
     for(var key in targetObj) {
-        if(targetObj.hasOwnProperty(key) && omitKeys.indexOf(key) < 0) {
+        if(targetObj.hasOwnProperty(key) && omitKeys.indexOf(key) < 0) { //key가 omitKeys배열에 존재하지 않는다면 true
             returnObj[key] = targetObj[key];
         }
     }
