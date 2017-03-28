@@ -4,8 +4,8 @@
 
 var _ = require('underscore');
 
-_.find([1,2,3,'4',5], _.isString); // 3, 첫번째 일치
-
+var result = _.find([1,2,3,'4',5], _.isString); // 3, 첫번째 일치
+console.log(result);
 _.reject(['a','b',3,'d'], _.isNumber);//['a','b','d'], false인 전부 반환
 
 _.all([1,2,3,4], _.isNumber); //전부 다 true 이면 true 아니면 false
@@ -22,6 +22,6 @@ _.groupBy(people, function (p) { return p.name; }); //값에 따라 값 분리
 }
 */
 
-_.countBy(people, function() {return p.name}); // count
+//_.countBy(people, function() {return p.name}); // count
 // {Rick: 2, Koko: 1};,
 

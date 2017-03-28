@@ -2,10 +2,15 @@
  * Created by jonghyeok on 2017-03-12.
  */
 
-var test1 = [2,3,-1,-6,0,-108,42,10].sort();
+var testArr = [2,3,-1,-6,0,-108,42,10];
+
+var test1 = testArr.sort();
 console.log("test1: ", test1);
 
-var test2 = [2,3,-1,-6,0,-108,42,10].sort(function(x, y) {
+
+console.log(testArr); //[2,3,-1,-6,0,-108,42,10]
+
+var test2 = testArr.sort(function(x, y) {
     if(x > y) {
         return -1;
     }
@@ -14,15 +19,32 @@ var test2 = [2,3,-1,-6,0,-108,42,10].sort(function(x, y) {
     }
     return 0;
 });
+
 console.log("test2: ", test2);
 
 
 var testArr = [1,2,3];
 console.log(testArr.push(2,3,4)); // mutable
+//console.log(testArr);
 
-// var arr = new ImmutableArray([1, 2, 3, 4]);
-// var v2 = arr.push(5);
-//
-// arr.toArray(); // [1, 2, 3, 4]
-// v2.toArray();  // [1, 2, 3, 4, 5]
+var obj = {
+    test: 'A',
+    test2: 'B'
+};
 
+function someProcess1(obj) {
+    obj.test + "BCD";
+    return obj;
+}
+
+function someProcess2(obj) {
+    obj.test = "2";
+    //someProcess
+}
+
+function someProcess3(obj) {
+    obj.test + "1";
+    return obj;
+}
+
+console.log(obj);
