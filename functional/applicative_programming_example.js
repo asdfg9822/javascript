@@ -56,3 +56,19 @@ function test(condition, callback) {
       }
     };
 }
+
+var arr = [1,2,3,4,5];
+//기존 String연결을 사용하여 저장하는 경우
+var result = "";
+for(var i=0; i <arr.length; i++) {
+    result += arr[i];
+}
+
+//배열로 저장하면 변경이 용이
+var resultArr = [];
+for(var i=0; i <arr.length; i++) {
+    result.push(arr[i]);
+}
+result.join('');
+
+
